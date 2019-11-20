@@ -7,10 +7,15 @@ Configuration options for the broker can be found in the [environment configurat
 ## Default Configuration
 
 ### Access Keys
-The broker will start with the following access keys:
+The broker will start with the following preconfigured access key:
 
 - Access Key: `8833333111127534`
 - Access Token: `Ih+hNsSdxLxAtHceTeEia2MGXSc=`
+
+The broker will start with the following preconfigured admin access key:
+
+- Access Key: `9007199254740991`
+- Access Token: `kTBDVtfRBO4tHOnZzSyY5ym2kfY=`
 
 ### Port Mappings
 The broker will start with the following port mappings:

@@ -1,6 +1,9 @@
 # netifi-docker-compose
 A collection of Docker Compose files that make it easy to setup different [Netifi](https://www.netifi.com) Broker configurations.
 
+## Prerequisites
+These scripts require that you have [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/) installed on your system.
+
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/netifi-docker-compose/issues).
 

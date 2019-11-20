@@ -1,6 +1,9 @@
 # broker
 Deploys a single Netifi Broker.
 
+## Configuring the Broker
+Configuration options for the broker can be found in [environment configuration](.env) file.
+
 ## Starting the Broker
 In the current directory, run the following command to deploy the broker:
 

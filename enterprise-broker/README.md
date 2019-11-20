@@ -9,7 +9,7 @@ You must add values for the following configuration properties in the [environme
 - `NETIFI_ENTERPRISE_ADDRESS` - Hostname of your Netifi Enterprise Platform endpoint.
 - `NETIFI_ENTERPRISE_PORT` - Port of your Netifi Enterprise Platform endpoint.
 
-These values will be given to you by your Netifi customer service representative. If you are not currently a Netifi customer, feel free to reach out to us by email at [info@netifi.com](mailto: info@netifi.com) or via our [website](https://www.netifi.com) to get started with your Netifi Enterprise trial today.
+These values will be given to you by your Netifi customer service representative. If you are not currently a Netifi customer, feel free to reach out to us by email at info@netifi.com or via our [website](https://www.netifi.com) to get started with your Netifi Enterprise trial today.
 
 ### Default Configuration
 

@@ -4,9 +4,9 @@ Deploys a single instance of the Netifi Broker.
 ## Configuring the Broker
 Configuration options for the broker can be found in the [environment configuration](.env) file.
 
-## Default Configuration
+### Default Configuration
 
-### Access Keys
+#### Access Keys
 The broker will start with the following preconfigured access key:
 
 - Access Key: `8833333111127534`
@@ -17,7 +17,7 @@ The broker will start with the following preconfigured admin access key:
 - Access Key: `9007199254740991`
 - Access Token: `kTBDVtfRBO4tHOnZzSyY5ym2kfY=`
 
-### Port Mappings
+#### Port Mappings
 The broker will start with the following port mappings:
 
 | Host | Container | Description |

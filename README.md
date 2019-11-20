@@ -1,6 +1,9 @@
 # netifi-docker-compose
 A collection of Docker Compose files that make it easy to setup different [Netifi](https://www.netifi.com) Broker configurations.
 
+- [broker](broker) - Deploys a single instance of the Netifi Broker.
+- [broker-cluster](broker-cluster) - Deploys three clustered instances of the Netifi Broker.
+
 ## Prerequisites
 These scripts require that you have [Docker](https://docs.docker.com/install/) and [Docker Compose](https://docs.docker.com/compose/install/) installed on your system.
 

@@ -1,8 +1,17 @@
 # broker
-Deploys a single Netifi Broker.
+Deploys a single instance of the Netifi Broker.
+
+The Netifi Broker will start with the following port mappings:
+
+| Host | Container | Description |
+|------|-----------|-------------|
+| 6001 | 6001 | Admin |
+| 7001 | 7001 | Clustering |
+| 8001 | 8001 | TCP |
+| 8101 | 8101 | Websockets |
 
 ## Configuring the Broker
-Configuration options for the broker can be found in [environment configuration](.env) file.
+Configuration options for the broker can be found in the [environment configuration](.env) file.
 
 ## Starting the Broker
 In the current directory, run the following command to deploy the broker:

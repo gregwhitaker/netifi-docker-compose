@@ -1,7 +1,7 @@
 # broker-cluster
 Deploys three clustered instances of the Netifi Broker.
 
-## Configuring the Broker
+## Configuring the Brokers
 Configuration options for the brokers can be found in the [environment configuration](.env) file.
 
 ### Default Configuration
@@ -44,17 +44,17 @@ The brokers will start with the following port mappings:
 | 8003 | 8003 | TCP |
 | 8103 | 8103 | Websockets |
 
-## Starting the Broker
+## Starting the Brokers
 In the current directory, run the following command to deploy the broker cluster:
 
     docker-compose up
 
-## Stopping the Broker
+## Stopping the Brokers
 In the current directory, run the following command to stop the running broker cluster:
 
     docker-compose kill
 
-## Removing the Broker Container
+## Removing the Broker Containers
 In the current directory, run the following command to remove the broker containers:
 
     docker-compose rm

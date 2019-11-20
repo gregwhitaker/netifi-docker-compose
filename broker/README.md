@@ -1,12 +1,17 @@
 # broker
 Deploys a single Netifi Broker.
 
-## Deploy
+## Starting the Broker
 In the current directory, run the following command to deploy the broker:
 
     docker-compose up
 
-## Cleanup
-In the current directory, run the following command to kill and cleanup the broker:
+## Stopping the Broker
+In the current directory, run the following command to stop the running broker:
 
-    ./cleanup.sh
+    docker-compose kill
+
+## Removing the Broker Container
+In the current directory, run the following command to remove the broker container:
+
+    docker-compose rm

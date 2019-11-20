@@ -1,10 +1,11 @@
 # netifi-docker-compose
 A collection of Docker Compose files that make it easy to setup different [Netifi](https://www.netifi.com) Broker configurations.
 
-##
+## Bugs and Feedback
+For bugs, questions, and discussions please use the [Github Issues](https://github.com/gregwhitaker/netifi-docker-compose/issues).
 
 ## License
-Copyright 2019 [Netifi Inc.](https://www.netifi.com)
+Copyright 2019 Netifi Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

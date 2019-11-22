@@ -3,6 +3,7 @@ A collection of Docker Compose files that make it easy to setup different [Netif
 
 - [broker](broker) - Deploys a single instance of the Netifi Broker.
 - [broker-cluster](broker-cluster) - Deploys three clustered instances of the Netifi Broker.
+- [broker-cluster-macos](broker-cluster-macos) - Deploys three clustered instances of the Netifi Broker on MacOS.
 - [enterprise-broker](enterprise-broker) - Deploys a single instance of the Netifi Enterprise Broker.
 - [enterprise-broker-cluster](enterprise-broker-cluster) - Deploys three clustered instances of the Netifi Enterprise Broker.
 

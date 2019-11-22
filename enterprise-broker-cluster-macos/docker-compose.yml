@@ -1,0 +1,36 @@
+version: "3.5"
+
+services:
+  broker1:
+    container_name: broker1
+    image: netifi/broker:${DOCKER_BROKER_IMAGE_VERSION}
+    environment:
+      - "BROKER_SERVER_OPTS=-Dnetifi.broker.ssl.disabled=${NETIFI_BROKER_SSL_DISABLED} -Dnetifi.broker.cluster.clusterName=${NETIFI_BROKER_CLUSTER_CLUSTERNAME} -Dnetifi.enterprise.accessKey=${NETIFI_ENTERPRISE_ACCESSKEY} -Dnetifi.enterprise.accessToken=${NETIFI_ENTERPRISE_ACCESSTOKEN} -Dnetifi.enterprise.address=${NETIFI_ENTERPRISE_ADDRESS} -Dnetifi.enterprise.port=${NETIFI_ENTERPRISE_PORT} -Dnetifi.broker.cluster.address=0.0.0.0 -Dnetifi.broker.cluster.publicAddress=broker1 -Dnetifi.broker.cluster.port=7001 -Dnetifi.broker.tcp.address=broker1 -Dnetifi.broker.tcp.publicAddress=broker1 -Dnetifi.broker.tcp.port=8001 -Dnetifi.broker.websocket.address=broker1 -Dnetifi.broker.websocket.publicAddress=broker1 -Dnetifi.broker.websocket.port=8101"
+    ports:
+      - "7001:7001"
+      - "8001:8001"
+      - "8101:8101"
+
+  broker2:
+    container_name: broker2
+    image: netifi/broker:${DOCKER_BROKER_IMAGE_VERSION}
+    environment:
+      - "BROKER_SERVER_OPTS=-Dnetifi.broker.ssl.disabled=${NETIFI_BROKER_SSL_DISABLED} -Dnetifi.broker.cluster.clusterName=${NETIFI_BROKER_CLUSTER_CLUSTERNAME} -Dnetifi.enterprise.accessKey=${NETIFI_ENTERPRISE_ACCESSKEY} -Dnetifi.enterprise.accessToken=${NETIFI_ENTERPRISE_ACCESSTOKEN} -Dnetifi.enterprise.address=${NETIFI_ENTERPRISE_ADDRESS} -Dnetifi.enterprise.port=${NETIFI_ENTERPRISE_PORT} -Dnetifi.broker.cluster.address=broker2 -Dnetifi.broker.cluster.publicAddress=broker2 -Dnetifi.broker.cluster.port=7002 -Dnetifi.broker.tcp.address=broker2 -Dnetifi.broker.tcp.publicAddress=broker2 -Dnetifi.broker.tcp.port=8002 -Dnetifi.broker.websocket.address=broker2 -Dnetifi.broker.websocket.publicAddress=broker2 -Dnetifi.broker.websocket.port=8102 -Dnetifi.broker.seed.address=broker1:7001"
+    ports:
+      - "7002:7002"
+      - "8002:8002"
+      - "8102:8102"
+    depends_on:
+      - broker1
+
+  broker3:
+    container_name: broker3
+    image: netifi/broker:${DOCKER_BROKER_IMAGE_VERSION}
+    environment:
+      - "BROKER_SERVER_OPTS=-Dnetifi.broker.ssl.disabled=${NETIFI_BROKER_SSL_DISABLED} -Dnetifi.broker.cluster.clusterName=${NETIFI_BROKER_CLUSTER_CLUSTERNAME} -Dnetifi.enterprise.accessKey=${NETIFI_ENTERPRISE_ACCESSKEY} -Dnetifi.enterprise.accessToken=${NETIFI_ENTERPRISE_ACCESSTOKEN} -Dnetifi.enterprise.address=${NETIFI_ENTERPRISE_ADDRESS} -Dnetifi.enterprise.port=${NETIFI_ENTERPRISE_PORT} -Dnetifi.broker.cluster.address=broker3 -Dnetifi.broker.cluster.publicAddress=broker3 -Dnetifi.broker.cluster.port=7003 -Dnetifi.broker.tcp.address=broker3 -Dnetifi.broker.tcp.publicAddress=broker3 -Dnetifi.broker.tcp.port=8003 -Dnetifi.broker.websocket.address=broker3 -Dnetifi.broker.websocket.publicAddress=broker3 -Dnetifi.broker.websocket.port=8103 -Dnetifi.broker.seed.address=broker1:7001"
+    ports:
+      - "7003:7003"
+      - "8003:8003"
+      - "8103:8103"
+    depends_on:
+      - broker1

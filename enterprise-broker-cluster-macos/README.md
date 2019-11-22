@@ -1,5 +1,7 @@
 # enterprise-broker-cluster
-Deploys three clustered instances of the Netifi Enterprise Broker.
+Deploys three clustered instances of the Netifi Enterprise Broker on MacOS.
+
+Because Docker networking works differently on Docker for Mac you need to use this configuration when clustering local Netifi Enterprise Broker instances.
 
 ## Configuring the Brokers
 You must add values for the following configuration properties in the [environment configuration](.env) file in order for the Netifi Enterprise Brokers to start:
